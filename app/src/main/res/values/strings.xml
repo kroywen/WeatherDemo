@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">WeatherDemo</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_weather">Weather</string>
+    <string name="failed_load_data">Loading weather data failed</string>
+    <string name="show_location">Show Location on Map</string>
+    <string name="pressure">&lt;b&gt;Pressure:&lt;/b&gt; %.2f hPa</string>
+    <string name="humidity">&lt;b&gt;Humidity:&lt;/b&gt; %d%%</string>
+    <string name="wind">&lt;b&gt;Wind:&lt;/b&gt; %1$s %2$.2f m/s (%3$s)</string>
+    <string name="sunrise">&lt;b&gt;Sunrise:&lt;/b&gt; %s</string>
+    <string name="sunset">&lt;b&gt;Sunset:&lt;/b&gt; %s</string>
+    <string name="coords">&lt;b&gt;Geo coords:&lt;/b&gt; [%1$.2f, %2$.2f]</string>
+
+</resources>
