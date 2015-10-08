@@ -98,7 +98,6 @@ public class WeatherActivity extends BaseLocationActivity {
             call.enqueue(new Callback<WeatherData>() {
                 @Override
                 public void onResponse(Response<WeatherData> response, Retrofit retrofit) {
-                    setProgressBarIndeterminateVisibility(false);
                     if (response != null && response.isSuccess()) {
                         mWeatherData = response.body();
                         updateUI();
@@ -109,13 +108,11 @@ public class WeatherActivity extends BaseLocationActivity {
                 }
                 @Override
                 public void onFailure(Throwable t) {
-                    setProgressBarIndeterminateVisibility(false);
                     Toast.makeText(WeatherActivity.this,
                             R.string.failed_load_data, Toast.LENGTH_SHORT).show();
                     t.printStackTrace();
                 }
             });
-            setProgressBarIndeterminateVisibility(true);
         }
     }
 
